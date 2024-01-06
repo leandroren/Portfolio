@@ -1,0 +1,44 @@
+.skill{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    display: block;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+
+
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+.logos-skill{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+
+    .card{
+        width: 8rem;
+        height: 8rem;
+        background-color: #050505;
+        box-shadow:(0px 1px 6px 0px #77D9BD );
+        padding: 10px;
+        margin: 1.5rem;
+    }
+
+
+    img{
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .card-text{
+        color: white;
+        font-size: .8rem;
+        text-align: center;
+    }
+}}

@@ -1,0 +1,87 @@
+@media (width < 768px) {
+
+nav img.img-fluid.logo{
+        width: 100%;
+        height: 50px;
+    }
+
+.inicio{
+    flex-direction: column;
+    margin: .5rem auto 1rem;
+
+    h1{
+        font-size: 1.8rem;
+        padding: 0 10px;
+        text-align: left;
+    }
+    h2{
+        font-size: 1.2rem;
+        padding: 0 10px;
+        text-align: left;
+    }
+    h3{
+        font-size: 0.8rem;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .contacto button.curriculum {
+        margin: .5rem;
+    }  
+
+    .contacto button.curriculum p{
+        font-size: 12px;
+    }
+}
+
+
+.skill h2{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.proyectos{
+    margin: 1rem 0;
+
+    .proyectos-card .card {width: 100%;}
+
+    h2{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}}
+
+.formulario{
+    width: 80%;
+}
+
+footer{
+    flex-direction: column;
+    margin-top: 1rem;
+
+    svg{
+        color: rgb(239, 239, 239);
+        margin: .5rem 1rem;
+        width: 30px;
+    }
+
+
+.copyright{
+    display: none;
+}
+
+
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flecha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+}
+}

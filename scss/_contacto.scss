@@ -1,0 +1,21 @@
+.formulario{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+
+    input, textarea, .btn-enviar{
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        color: #000000;
+    }
+
+    .btn-enviar{
+        background-color:#7fe6c9;
+    }
+
+    .btn-enviar:hover{
+        background-color:#198667;
+        color: #0B0B0B;
+    }
+}
+

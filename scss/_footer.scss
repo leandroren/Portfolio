@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 10px 0;
+
+    svg{
+        color: rgb(239, 239, 239);
+        margin-left: 2rem;
+    }
+    svg:hover{
+        color: #77D9BD;
+        padding: .5px;
+    }
+
+
+.copyright{
+    width: 35%;
+    justify-content: end;
+
+    p{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+
+
+.redes{
+    width: 40%;
+    justify-content: center;
+}
+
+.flecha{
+    display: flex;
+    justify-content: right;
+    width: 20%;
+    margin-right: 5px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s; 
+}
+}

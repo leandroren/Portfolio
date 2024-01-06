@@ -1,0 +1,68 @@
+body{
+    background-color:#14003D;
+    color: #F2F2F2;
+    z-index: auto;
+    background-image: url('../img/fondo-espacio.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #14003d79;
+    z-index: -1; 
+    }
+
+
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+button.navbar-toggler.collapsed, .navbar-toggler:focus, .navbar-toggler  {
+    background-color: #fdfdfd96;
+}
+
+a {
+    color: none, var none;
+    text-decoration: none;}
+
+    .texto {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        animation: escribir 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+    }
+    
+    .texto span {
+        display: inline-block;
+        width: 12ch;
+        overflow: hidden;
+    }
+    
+    @keyframes escribir {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes blink-caret {
+        from, to {
+            border-color: transparent;
+        }
+        50% {
+            border-color: black;
+        }
+    }
+    
+  

@@ -1,0 +1,76 @@
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem auto 5rem;
+    
+
+    h1{
+        font-weight: bolder;
+        font-size: 3rem;
+        color: #F2F2F2;
+    }
+    h2{
+        font-size: 2.5rem;
+        color: #77D9BD;
+    }
+
+    h3{
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    .contacto{
+        display:flex;
+        justify-content:flex-start;
+        align-items: center;
+
+
+    svg{
+        margin: 0 .5rem;
+    }
+
+    svg:hover{
+        color:#77D9BD;
+    }
+
+    button.curriculum {
+        border: 1px solid #77D9BD;
+        background-color: #0C0C0E;
+        border-radius: 10px;
+        padding: 0.5em 1.2em;
+        margin: 0 0.1em 0.1em 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #ffffff;
+        transition: background-color 1s ease 0s;
+}   
+
+button.curriculum:hover {
+    background-color: #77D9BD;
+    color: #0B0B0B;
+    text-decoration: none;
+}
+
+button p{
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+a{
+    text-align:center;
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+button p:hover{
+    text-align:center;
+    text-decoration: none;
+    color: #0B0B0B;
+}
+
+}}
+

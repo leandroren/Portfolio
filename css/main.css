@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap");
+body {
+  background-color: #14003D;
+  color: #F2F2F2;
+  z-index: auto;
+  background-image: url("../img/fondo-espacio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto Mono", monospace;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 0, 61, 0.4745098039);
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+button.navbar-toggler.collapsed, .navbar-toggler:focus, .navbar-toggler {
+  background-color: rgba(253, 253, 253, 0.5882352941);
+}
+
+a {
+  color: none, var none;
+  text-decoration: none;
+}
+
+.texto {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: escribir 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+.texto span {
+  display: inline-block;
+  width: 12ch;
+  overflow: hidden;
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  position: relative;
+  background: rgba(37, 3, 58, 0.6745098039);
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+nav .nav-link {
+  font-size: 20px;
+  margin-right: 1rem;
+  color: #77D9BD !important;
+}
+nav .nav-link:hover {
+  border-radius: 5%;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+nav img.img-fluid.logo {
+  width: 250px;
+  height: auto;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem auto 5rem;
+}
+.inicio h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #F2F2F2;
+}
+.inicio h2 {
+  font-size: 2.5rem;
+  color: #77D9BD;
+}
+.inicio h3 {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+.inicio .contacto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inicio .contacto svg {
+  margin: 0 0.5rem;
+}
+.inicio .contacto svg:hover {
+  color: #77D9BD;
+}
+.inicio .contacto button.curriculum {
+  border: 1px solid #77D9BD;
+  background-color: #0C0C0E;
+  border-radius: 10px;
+  padding: 0.5em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 1s ease 0s;
+}
+.inicio .contacto button.curriculum:hover {
+  background-color: #77D9BD;
+  color: #0B0B0B;
+  text-decoration: none;
+}
+.inicio .contacto button p {
+  text-decoration: none;
+  padding: 0 5px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.inicio .contacto a {
+  text-align: center;
+  text-decoration: none;
+  color: #F2F2F2;
+}
+.inicio .contacto button p:hover {
+  text-align: center;
+  text-decoration: none;
+  color: #0B0B0B;
+}
+
+.skill {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  display: block;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+.skill h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.skill .logos-skill {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+.skill .logos-skill .card {
+  width: 8rem;
+  height: 8rem;
+  background-color: #050505;
+  box-shadow: 0px 1px 6px 0px #77D9BD;
+  padding: 10px;
+  margin: 1.5rem;
+}
+.skill .logos-skill img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.skill .logos-skill .card-text {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.proyectos {
+  margin: 5rem 0;
+  scroll-behavior: smooth;
+}
+.proyectos h2 {
+  font-size: 3rem;
+  margin: 8rem 0 3rem 0;
+}
+.proyectos .proyectos-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.proyectos .proyectos-card .card {
+  width: 20%;
+  height: auto;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  padding: 2px;
+}
+.proyectos .proyectos-card .card img {
+  width: 100%;
+}
+.proyectos .proyectos-card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.proyectos .proyectos-card .card:hover {
+  transform: translateY(-10px);
+}
+.proyectos .proyectos-card .card:hover .card-body {
+  transform: translateY(0);
+}
+.proyectos .proyectos-card .btn {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.formulario {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+.formulario input, .formulario textarea, .formulario .btn-enviar {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  color: #000000;
+}
+.formulario .btn-enviar {
+  background-color: #7fe6c9;
+}
+.formulario .btn-enviar:hover {
+  background-color: #198667;
+  color: #0B0B0B;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 10px 0;
+}
+footer svg {
+  color: rgb(239, 239, 239);
+  margin-left: 2rem;
+}
+footer svg:hover {
+  color: #77D9BD;
+  padding: 0.5px;
+}
+footer .copyright {
+  width: 35%;
+  justify-content: end;
+}
+footer .copyright p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+footer .redes {
+  width: 40%;
+  justify-content: center;
+}
+footer .flecha {
+  display: flex;
+  justify-content: right;
+  width: 20%;
+  margin-right: 5px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 5s;
+}
+
+@media (width < 768px) {
+  nav img.img-fluid.logo {
+    width: 100%;
+    height: 50px;
+  }
+  .inicio {
+    flex-direction: column;
+    margin: 0.5rem auto 1rem;
+  }
+  .inicio h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .inicio h2 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .inicio h3 {
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: left;
+  }
+  .inicio .contacto button.curriculum {
+    margin: 0.5rem;
+  }
+  .inicio .contacto button.curriculum p {
+    font-size: 12px;
+  }
+  .skill h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .proyectos {
+    margin: 1rem 0;
+  }
+  .proyectos .proyectos-card .card {
+    width: 100%;
+  }
+  .proyectos h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .formulario {
+    width: 80%;
+  }
+  footer {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  footer svg {
+    color: rgb(239, 239, 239);
+    margin: 0.5rem 1rem;
+    width: 30px;
+  }
+  footer .copyright {
+    display: none;
+  }
+  footer .redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .flecha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=main.css.map */

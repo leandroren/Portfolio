@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content:space-around;
+    height: auto;
+    position: relative;
+    background: #25033aac;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+
+    .nav-link{
+        font-size: 20px;
+        margin-right: 1rem;
+        color:#77D9BD !important;
+    }
+
+    .nav-link:hover{
+        border-radius:5%;
+        border-bottom: 2px solid white; 
+        border-top: 2px solid white;     
+    }
+
+    img.img-fluid.logo{
+        width: 250px;
+        height: auto;
+    }
+
+}
